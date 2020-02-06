@@ -3,5 +3,6 @@ var data = require('../data.json');
 
 exports.view = function(request, response){
 	console.log(data);
-	response.render('index');
+	// get data variable and send it in as argument
+	response.render('index',data);
 };
